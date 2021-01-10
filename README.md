@@ -3,6 +3,8 @@
 
 __The translation is not yet complete, and is in the process of being finalized__
 
+![timpickerRU](https://user-images.githubusercontent.com/43705385/104126983-97040e00-5370-11eb-975a-2eda0f3ba7a7.png)
+
 
 ## How to use
 
