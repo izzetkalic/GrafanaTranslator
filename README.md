@@ -1,3 +1,8 @@
+# Grafana translator
+*Simple translator for Grafana, developed for  Unix-like systems*
+
+__The translation is not yet complete, and is in the process of being finalized__
+
 
 ## How to use
 
