@@ -19,6 +19,7 @@ bash run.sh
 
 ## Supported Languages
 <kbd><img src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="24"></kbd> Русский
+<kbd><img src="https://cdn.statically.io/flags/tr.svg" width="24"></kbd> Türkçe
 
 ## Contributions
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PS3='Please enter your choice: '
-options=("Russian" "Italiano" "Quit")
+options=("Russian" "Turkish" "Italiano" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -11,7 +11,13 @@ do
             ./Russian.sh
             break 
             ;; 
-            "Italiano")
+        "Turkish")
+            cd langs
+            chmod +x Turkish.sh
+            ./Turkish.sh
+            break
+            ;;
+        "Italiano")
             cd langs
             chmod +x Italian.sh
             ./Italian.sh
