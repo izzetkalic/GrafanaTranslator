@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PS3='Please enter your choice: '
-options=("Russian" "Quit")
+options=("Russian" "Turkish" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -9,6 +9,12 @@ do
             cd langs
             chmod +x Russian.sh
             ./Russian.sh
+            break 
+            ;; 
+        "Turkish")
+            cd langs
+            chmod +x Turkish.sh
+            ./Turkish.sh
             break 
             ;; 
         "Quit")
