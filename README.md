@@ -8,6 +8,8 @@ __The translation is not yet complete, and is in the process of being finalized_
 
 ## How to use
 
+‼️ __Don't run on production without a full backup!!!__
+
 ````
 git clone https://github.com/DmitrySidorow/GrafanaTranslator.git
 cd GrafanaTranslator
