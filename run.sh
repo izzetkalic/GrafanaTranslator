@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PS3='Please enter your choice: '
-options=("Russian" "Turkish" "Italiano" "Quit")
+PS3='Please choose your language: '
+options=("Russian" "Turkish" "Italiano" "Latviešu" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -21,6 +21,12 @@ do
             cd langs
             chmod +x Italian.sh
             ./Italian.sh
+            break 
+            ;; 
+        "Latviešu")
+            cd langs
+            chmod +x Latvian.sh
+            ./Latvian.sh
             break 
             ;; 
         "Quit")
