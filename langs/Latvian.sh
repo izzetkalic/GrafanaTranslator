@@ -34,12 +34,12 @@ sed -i 's/"Previous month"/"Iepriekšējais mēnesis"/g' app*.js*
 sed -i 's/"Previous year"/"Iepriekšējais gads"/g' app*.js*
 sed -i 's/"Today"/"Šodien"/g' app*.js*
 sed -i 's/"Today so far"/"Šodien (līdz šim laikam)"/g' app*.js*
-sed -i 's/"This week"/"Šī nedēļa"/g' app*.js*
-sed -i 's/"This week so far"/"Šī nedēļa (līdz šim laikam)"/g' app*.js*
-sed -i 's/"This month"/"Šis mēnesis"/g' app*.js*
-sed -i 's/"This month so far"/"Šis mēnesis (līdz šim laikam)"/g' app*.js*
-sed -i 's/"This year"/"Šis gads"/g' app*.js*
-sed -i 's/"This year so far"/"Šis gads (līdz šim laikam)"/g' app*.js*
+sed -i 's/"This week"/"Šonedēļ"/g' app*.js*
+sed -i 's/"This week so far"/"Šonedēļ (līdz šim laikam)"/g' app*.js*
+sed -i 's/"This month"/"Šomēnes"/g' app*.js*
+sed -i 's/"This month so far"/"Šomēnes (līdz šim laikam)"/g' app*.js*
+sed -i 's/"This year"/"Šogad"/g' app*.js*
+sed -i 's/"This year so far"/"Šogad (līdz šim laikam)"/g' app*.js*
 sed -i 's/"Next 30 minutes"/"Nākamās 30 minūtes"/g' app*.js*
 
 sed -i 's/"Latvia"/"Latvija"/g' app*.js*
