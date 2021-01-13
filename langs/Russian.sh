@@ -117,6 +117,10 @@ sed -i 's/"Fri"/"Пт"/g' app*.js*
 sed -i 's/"Sat"/"Сб"/g' app*.js*
 sed -i 's/"Sun"/"Вс"/g' app*.js*
 
+sed -i 's/"Selected (",n.length,")"/"Выбрано (",n.length,")"/g' app*.js* # in variables list (multiple selection)
+sed -i 's/"Type to search (country, city, abbreviation)"/"Введите для поиска (страна, город, аббревиатура)"/g' app*.js*
+sed -i 's/"Default"/"По умолчанию"/g' app*.js*
+
 sleep 5
 sudo service grafana-server restart
 echo "Перевод завершен! Очистите кэш браузера, чтобы увидеть изменения! (CTRL+F5)"
