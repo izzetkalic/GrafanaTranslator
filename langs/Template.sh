@@ -119,6 +119,10 @@ sed -i 's/"Fri"/"##########"/g' app*.js*
 sed -i 's/"Sat"/"##########"/g' app*.js*
 sed -i 's/"Sun"/"##########"/g' app*.js*
 
+sed -i 's/"Selected (",n.length,")"/"########## (",n.length,")"/g' app*.js* # in variables list (multiple selection)
+sed -i 's/"Type to search (country, city, abbreviation)"/"##########"/g' app*.js*
+sed -i 's/"Default"/"##########"/g' app*.js*
+
 sleep 5
 sudo service grafana-server restart
 echo "Translating done! Clear browser cache to see changes! (CTRL+F5)"
