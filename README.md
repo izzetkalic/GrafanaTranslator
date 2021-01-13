@@ -21,6 +21,7 @@ bash run.sh
 <kbd><img src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="24"></kbd> Русский
 <kbd><img src="https://cdn.statically.io/flags/tr.svg" width="24"></kbd> Türkçe
 <kbd><img src="https://cdn.statically.io/flags/it.svg" width="24"></kbd> Italiano
+<kbd><img src="https://cdn.statically.io/flags/lv.svg" width="24"></kbd> Latvian
 
 ## Contributions
 
