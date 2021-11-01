@@ -77,7 +77,7 @@ sed -i 's/"Logging in..."/"Вход..."/g' app*.js*
 sed -i 's/"Email or username is required"/"Введите Email или логин"/g' app*.js*
 sed -i 's/"Password is required"/"Введите пароль"/g' app*.js*
 
-# Прочее (еще не отсортировано)
+## Прочее (еще не отсортировано)
 sed -i 's/title:"Dashboards"/title:"Дашборды"/g' app*.js*
 sed -i 's/tooltip:"Save dashboard"/tooltip:"Сохранить изменения"/g' app*.js*
 sed -i 's/tooltip:"Dashboard settings"/tooltip:"Настройки дашборда"/g' app*.js*
@@ -96,30 +96,193 @@ sed -i 's/" ago"/" назад"/g' app*.js*
 sed -i 's/"Press ESC to exit Kiosk mode"/"Нажмите ESC, чтобы вернуть стандартный режим просмотра"/g' app*.js*
 sed -i 's/tooltip:"Refresh dashboard"/tooltip:"Обновить дашборд"/g' app*.js*
 
-sed -i 's/"Jan"/"Янв"/g' app*.js*
-sed -i 's/"Feb"/"Фев"/g' app*.js*
-sed -i 's/"Mar"/"Мар"/g' app*.js*
-sed -i 's/"Apr"/"Апр"/g' app*.js*
-sed -i 's/"May"/"Май"/g' app*.js*
-sed -i 's/"Jun"/"Июн"/g' app*.js*
-sed -i 's/"Jul"/"Июл"/g' app*.js*
-sed -i 's/"Aug"/"Авг"/g' app*.js*
-sed -i 's/"Sep"/"Сен"/g' app*.js*
-sed -i 's/"Oct"/"Окт"/g' app*.js*
-sed -i 's/"Nov"/"Ноя"/g' app*.js*
-sed -i 's/"Dec"/"Дек"/g' app*.js*
+sed -i 's/"Jan"/"Янв"/g' *app*.js*
+sed -i 's/"Feb"/"Фев"/g' *app*.js*
+sed -i 's/"Mar"/"Мар"/g' *app*.js*
+sed -i 's/"Apr"/"Апр"/g' *app*.js*
+sed -i 's/"May"/"Май"/g' *app*.js*
+sed -i 's/"Jun"/"Июн"/g' *app*.js*
+sed -i 's/"Jul"/"Июл"/g' *app*.js*
+sed -i 's/"Aug"/"Авг"/g' *app*.js*
+sed -i 's/"Sep"/"Сен"/g' *app*.js*
+sed -i 's/"Oct"/"Окт"/g' *app*.js*
+sed -i 's/"Nov"/"Ноя"/g' *app*.js*
+sed -i 's/"Dec"/"Дек"/g' *app*.js*
 
-sed -i 's/"Mon"/"Пн"/g' app*.js*
-sed -i 's/"Tue"/"Вт"/g' app*.js*
-sed -i 's/"Wed"/"Ср"/g' app*.js*
-sed -i 's/"Thu"/"Чт"/g' app*.js*
-sed -i 's/"Fri"/"Пт"/g' app*.js*
-sed -i 's/"Sat"/"Сб"/g' app*.js*
-sed -i 's/"Sun"/"Вс"/g' app*.js*
+sed -i 's/"Mon"/"Пн"/g' *app*.js*
+sed -i 's/"Tue"/"Вт"/g' *app*.js*
+sed -i 's/"Wed"/"Ср"/g' *app*.js*
+sed -i 's/"Thu"/"Чт"/g' *app*.js*
+sed -i 's/"Fri"/"Пт"/g' *app*.js*
+sed -i 's/"Sat"/"Сб"/g' *app*.js*
+sed -i 's/"Sun"/"Вс"/g' *app*.js*
 
 sed -i 's/"Selected (",n.length,")"/"Выбрано (",n.length,")"/g' app*.js* # in variables list (multiple selection)
 sed -i 's/"Type to search (country, city, abbreviation)"/"Введите для поиска (страна, город, аббревиатура)"/g' app*.js*
 sed -i 's/"Default"/"По умолчанию"/g' app*.js*
+
+## ДОБАВЛЕНО 05.07.2021
+sed -i 's/"January"/"Январь"/g' *app*.js*
+sed -i 's/"Feb"/"Февраль"/g' *app*.js*
+sed -i 's/"March"/"Март"/g' *app*.js*
+sed -i 's/"April"/"Апрель"/g' *app*.js*
+sed -i 's/"May"/"Май"/g' *app*.js*
+sed -i 's/"June"/"Июнь"/g' *app*.js*
+sed -i 's/"July"/"Июль"/g' *app*.js*
+sed -i 's/"August"/"Август"/g' *app*.js*
+sed -i 's/"September"/"Сентябрь"/g' *app*.js*
+sed -i 's/"October"/"Октябрь"/g' *app*.js*
+sed -i 's/"November"/"Ноябрь"/g' *app*.js*
+sed -i 's/"December"/"Декабрь"/g' *app*.js*
+
+sed -i 's/"Monday"/"Понедельник"/g' *app*.js*
+sed -i 's/"Tuesday"/"Вторник"/g' *app*.js*
+sed -i 's/"Wednesday"/"Среда"/g' *app*.js*
+sed -i 's/"Thursday"/"Четверг"/g' *app*.js*
+sed -i 's/"Friday"/"Пятница"/g' *app*.js*
+sed -i 's/"Saturday"/"Суббота"/g' *app*.js*
+sed -i 's/"Sunday"/"Воскресенье"/g' *app*.js*
+
+
+########################################################
+echo "Перевожу в прочих app-js..."
+sed -i 's/"New Dashboard"/"Новый дашборд"/g' app*.js*   # ОК
+sed -i 's/"New Folder"/"Новая папка"/g' app*.js*        # ОК
+sed -i 's/"Import"/"Импортировать"/g' app*.js*          # ОК
+sed -i 's/"Absolute time range"/"Абсолютный временной интервал"/g' app*.js*
+sed -i 's/"Share dashboard or panel"/"Поделиться дашбордом или панелью"/g' app*.js*
+sed -i 's/"Save"/"Сохранить"/g' app*.js*
+sed -i 's/"Search dashboards by name"/"Найти дашборды по имени"/g' app*.js*
+sed -i 's/"Filter by tag"/"Фильтровать по тегу"/g' app*.js*
+sed -i 's/"Filter by starred"/"Фильтровать избранные"/g' app*.js*   # ОК
+
+sed -i 's/"Add annotation"/"Добавить аннотацию"/g' app*.js*   # ОК
+sed -i 's/"add tags"/"добавить теги"/g' app*.js*   # ОК - в отличие от соседних.
+
+
+sed -i 's/("th",null,"Dashboard name")/("th",null,"Имя дашборда")/g' app*.js*
+sed -i 's/("th",null,"Name")/("th",null,"Имя")/g' app*.js*
+sed -i 's/("th",null,"Type")/("th",null,"Тип")/g' app*.js*
+sed -i 's/("th",null,"Role")/("th",null,"Роль")/g' app*.js*
+sed -i 's/("th",null,"Last seen")/("th",null,"Замечен последний раз")/g' app*.js*
+sed -i 's/("th",null,"Logged on")/("th",null,"Залогинился")/g' app*.js*
+sed -i 's/("th",null,"IP address")/("th",null,"IP адрес")/g' app*.js*
+sed -i 's/("th",null,"Annotation")/("th",null,"Комментарий")/g' app*.js*
+
+# ############################################################
+echo "Перевожу в Dashboards..."
+sed -i 's/"New Dashboard"/"Новый дашборд"/g' *Dashboard*.js*  #
+sed -i 's/"New Folder"/"Новая папка"/g' *Dashboard*.js*
+sed -i 's/"Import"/"Импортировать"/g' *Dashboard*.js*
+sed -i 's/"Go to folder"/"Открыть папку"/g' *Dashboard*.js*
+sed -i 's/"Sort (A-Z)"/"Сортировать (А-Я)"/g' *Dashboard*.js*
+sed -i 's/"Alphabetically (A-Z)"/"По алфавиту (А-Я)"/g' *Dashboard*.js*
+sed -i 's/"Created by"/"Оставлено"/g' *Dashboard*.js*
+
+sed -i 's/"Add annotation"/"Добавить аннотацию"/g' *Dashboard*.js*
+sed -i 's/"Description"/"Описание"/g' *Dashboard*.js*
+sed -i 's/"Tags"/"Теги"/g' *Dashboard*.js*
+sed -i 's/"Save"/"Сохранить"/g' *Dashboard*.js*
+sed -i 's/"Cancel"/"Отменить"/g' *Dashboard*.js*
+
+sed -i 's/"Manage folder dashboards & permissions"/"Управляйте папками дашбордов и допусками"/g' *Dashboard*.js*
+
+sed -i 's/"Filter by tag"/"Фильтр по тегу"/g' *Dashboard*.js*
+sed -i 's/"Add an empty panel"/"Добавить пустую панель"/g' *Dashboard*.js*
+sed -i 's/"Add a new row"/"Добавить новый ряд (вкладку)"/g' *Dashboard*.js*
+
+# ############################################################
+echo "Перевожу в Alert..."
+sed -i 's/"Search alerts"/"Найти предупреждения"/g' *Alert*.js*
+sed -i 's/"Save"/"Сохранить"/g' *Alert*.js*
+sed -i 's/"Description"/"Описание"/g' *Alert*.js*
+sed -i 's/"What does the alert do and why was it created"/"Что делает предупреждение и почему было создано"/g' *Alert*.js*
+sed -i 's/"How to add an alert"/"Как добавить предупреждение"/g' *Alert*.js*
+sed -i 's/"States"/"Состояния"/g' *Alert*.js*
+sed -i 's/"Notification updated"/"Предупреждение обновлено"/g' *Alert*.js*
+sed -i 's/"Alert definition tested successfully"/"Предупреждение протестировано успешно"/g' *Alert*.js*
+sed -i 's/"Edit alert"/"Редактировать предупреждение"/g' *Alert*.js*
+
+echo "Перевожу в Notifications..."
+sed -i 's/"Notifications"/"Уведомления"/g' *Notifications*.js*
+sed -i 's/"Description"/"Описание"/g' *Notifications*.js*
+sed -i 's/"Add channel"/"Добавить канал"/g' *Notifications*.js*
+sed -i 's/"Delete"/"Удалить"/g' *Notifications*.js*
+sed -i 's/"Do you want to delete this notification channel?"/"Вы хотите удалить этот канал уведомлений?"/g' *Notifications*.js*
+sed -i 's/"Deleting this notification channel will not delete from alerts any references to it"/"Удаление этого канала уведомлений не удалит ссылки на него в предупреждениях (тревогах)"/g' *Notifications*.js*
+
+echo "Перевожу в Playlists..."
+sed -i 's/"Create Playlist"/"Создать плейлист"/g' *Playlist*.js*
+
+echo "Перевожу в Configuration - Organization..."
+sed -i 's/"New org"/"Новая организация"/g' *Org*.js*
+sed -i 's/"Update organization name"/"Обновить имя организации"/g' *Org*.js*
+sed -i 's/"Organization profile"/"Профиль организации"/g' *Org*.js*
+sed -i 's/"Organization name"/"Название организации"/g' *Org*.js*
+sed -i 's/"Update organization name"/"Обновить название организации"/g' *Org*.js*
+sed -i 's/"Preferences"/"Настройки"/g' *Org*.js*
+sed -i 's/"UI Theme"/"Тема графического интерфейса"/g' *Org*.js*
+sed -i 's/"Home Dashboard"/"Основной дашборд"/g' *Org*.js*
+sed -i 's/"Timezone"/"Временная зона"/g' *Org*.js*
+sed -i 's/"Save"/"Сохранить"/g' *Org*.js*
+
+echo "Перевожу в Configuration - Data sources..."
+sed -i 's/"Add data source"/"Добавить источник данных"/g' *DataSource*.js*
+sed -i 's/"Search by name or type"/"Найти по имени или типу"/g' *DataSource*.js*
+
+echo "Перевожу в Configuration - Users..."
+sed -i 's/"New user"/"Новый пользователь"/g' *User*.js*
+sed -i 's/"New user"/"Новый пользователь"/g' *Admin*.js*
+sed -i 's/"Invite"/"Пригласить"/g' *User*.js*
+sed -i 's/"New user"/"Новый пользователь"/g' *User*.js*
+sed -i 's/"New user"/"Новый пользователь"/g' *Admin*.js*
+sed -i 's/"Invite"/"Пригласить"/g' *User*.js*
+sed -i 's/"Login"/"Логин"/g' *User*.js*
+sed -i 's/"Login"/"Логин"/g' *Admin*.js*
+sed -i 's/"Email"/"Электронная почта"/g' *User*.js*
+sed -i 's/"Email"/"Электронная почта"/g' *Admin*.js*
+sed -i 's/"Name"/"Имя"/g' *User*.js*
+sed -i 's/"Name"/"Имя"/g' *Admin*.js*
+sed -i 's/"Seen"/"Замечен"/g' *User*.js*
+sed -i 's/"Seen"/"Замечен"/g' *Admin*.js*
+sed -i 's/"Role"/"Роль"/g' *User*.js*
+sed -i 's/"Role"/"Роль"/g' *Admin*.js*
+sed -i 's/"Search user by login, email or name"/"Найти пользователя по логину, почте или имени"/g' *User*.js*
+sed -i 's/"Search user by login, email, or name."/"Найти пользователя по логину, почте или имени"/g' *Admin*.js*
+
+echo "Перевожу в Teams..."
+sed -i 's/"New team"/"Новая команда"/g' *Team*.js*
+
+echo "Перевожу в Configuration - API keys..."
+sed -i 's/"Add API Key"/"Добавить API ключ"/g' *ApiKeysPage*.js*
+sed -i 's/"Key name"/"Имя ключа"/g' *ApiKeysPage*.js*
+sed -i 's/"Role"/"Роль"/g' *ApiKeysPage*.js*
+sed -i 's/"Time to live"/"Время жизни"/g' *ApiKeysPage*.js*
+sed -i 's/"Add"/"Добавить"/g' *ApiKeysPage*.js*
+sed -i 's/"New API key"/"Новый API ключ"/g' *ApiKeysPage*.js*
+
+echo "Перевожу в Configuration - Plugins..."
+sed -i 's/"Search by name, author, description or type"/"Найти по имени, автору, описанию или типу"/g' *Plugin*.js*
+sed -i 's/"Find more plugins on Grafana.com"/"Скачайте больше плагинов с Grafana.com"/g' *Plugin*.js*
+
+echo "Перевожу в Configuration - Teams..."
+sed -i 's/"New team"/"Новая команда"/g' *Team*.js*
+sed -i 's/"ProTip: Assign folder and dashboard permissions to teams instead of users to ease administration."/"Подсказка: назначьте папку и доступы к дашбордам команде, а не отдельным пользователям, чтобы упростить администрирование"/g' *Team*.js*
+
+echo "Перевожу в Admin..."
+sed -i 's/"Update"/"Обновить"/g' *Admin*.js*
+sed -i 's/"Delete"/"Удалить"/g' *Admin*.js*
+sed -i 's/"All dashboards for this organization will be removed!"/"Все дашборды организации будут удалены!"/g' *Admin*.js*
+sed -i 's/"Are you sure you want to delete "/"Вы уверены, что хотите удалить "/g' *Admin*.js*
+
+# ОСТОРОЖНО! Следующий блок меняет фразы во всех js файлах папки build
+echo "Перевожу ВЕЗДЕ в папке build/"
+sed -i 's/"Save"/"Сохранить"/g' *.js*
+sed -i 's/"Cancel"/"Отменить"/g' *.js*    # ОК
+sed -i 's/"Apply"/"Применить"/g' *.js*    # ОК
+sed -i 's/"Discard"/"Отменить"/g' *.js*   # ОК
+sed -i 's/"Add Annotation"/"Добавить комментарий"/g' *.js*
+sed -i 's/"Created by "/"Создано "/g' *.js*
 
 sleep 5
 sudo service grafana-server restart
